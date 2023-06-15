@@ -42,6 +42,12 @@
     margin-top: 5%;
 }
 
+.info {
+    height: 200px !important;
+    padding-right: 40px;
+    border-right: 3px solid grey;
+}
+
 .title {
     font-size: 30px;
 }
@@ -140,4 +146,34 @@
 
 .site {
     margin-top: 143px;
+}
+
+.left-dots>.dot {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.right-dots>.dot {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+    }
 }
